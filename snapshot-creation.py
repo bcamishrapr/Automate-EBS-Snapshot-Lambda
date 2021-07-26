@@ -12,6 +12,17 @@ def lambda_handler(event, context):
     ).get(
         'Reservations', []
     )
+  
+  
+  # This is sample code to understand below things, it is part of generator function
+ """
+    instances = sum(
+     [
+         [i*1 for i in range(3)]
+         for r in range(4)
+     ], [])
+print (instances) 
+"""
  
     instances = sum(
         [
