@@ -38,13 +38,15 @@ print (instances)
  ###TO CHECK THE FUNCTIONALITY OF SUM IN BELOW FUNCTION RUN BELOW CODE WITHOUT USING SUM and THEN USING SUM.
  
  """
- instances = sum(
+instances = sum(
      [
          [i*1 for i in range(3)]
          for r in range(4)
      ], [])
+print ("\nThis output is using sum\n")     
 print (instances) 
-#This is code without using sum
+#This is another code
+print ("\nThis output is without using sum\n")
 instances1 = [[i*1 for i in range(3)] 
 for r in range(4)]
 print (instances1)
