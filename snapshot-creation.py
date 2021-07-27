@@ -35,6 +35,20 @@ def lambda_handler(event, context):
 print (instances) 
 """
  
+ ###TO CHECK THE FUNCTIONALITY OF SUM IN BELOW FUNCTION RUN BELOW CODE WITHOUT USING SUM and THEN USING SUM.
+ 
+ """
+ instances = sum(
+     [
+         [i*1 for i in range(3)]
+         for r in range(4)
+     ], [])
+print (instances) 
+#This is code without using sum
+instances1 = [[i*1 for i in range(3)] 
+for r in range(4)]
+print (instances1)
+"""
  
     instances = sum(
         [
