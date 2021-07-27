@@ -14,6 +14,17 @@ def lambda_handler(event, context):
     )
   
   
+  ## This is other way to achieve the same thing as described in below section.
+  """
+   response=ec2.describe_instances()
+    instancelist = [] 
+   for reservation in (response["Reservations"]):
+        for instance in reservation["Instances"]:
+            instancelist.append(instance["InstanceId"]) print (instancelist)
+            
+            """
+  ###############################################################
+  
   # This is sample code to understand below things, it is part of generator function
  """
     instances = sum(
@@ -23,6 +34,7 @@ def lambda_handler(event, context):
      ], [])
 print (instances) 
 """
+ 
  
     instances = sum(
         [
